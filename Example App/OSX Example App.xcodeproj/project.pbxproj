@@ -1,0 +1,459 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B016E6B11A2543B300C701CE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B016E6B01A2543B300C701CE /* AppDelegate.m */; };
+		B016E6B31A2543B300C701CE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B016E6B21A2543B300C701CE /* main.m */; };
+		B016E6B51A2543B300C701CE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B016E6B41A2543B300C701CE /* Images.xcassets */; };
+		B016E6B81A2543B300C701CE /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = B016E6B61A2543B300C701CE /* MainMenu.xib */; };
+		B016E6C41A2543B300C701CE /* OSX_Example_AppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B016E6C31A2543B300C701CE /* OSX_Example_AppTests.m */; };
+		B016E6DA1A2543DB00C701CE /* ButtonEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = B016E6CF1A2543DB00C701CE /* ButtonEvent.m */; };
+		B016E6DB1A2543DB00C701CE /* GestureEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = B016E6D11A2543DB00C701CE /* GestureEvent.m */; };
+		B016E6DC1A2543DB00C701CE /* OpenSpatialBluetooth.m in Sources */ = {isa = PBXBuildFile; fileRef = B016E6D31A2543DB00C701CE /* OpenSpatialBluetooth.m */; };
+		B016E6DD1A2543DB00C701CE /* OpenSpatialDecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = B016E6D51A2543DB00C701CE /* OpenSpatialDecoder.m */; };
+		B016E6DE1A2543DB00C701CE /* PointerEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = B016E6D71A2543DB00C701CE /* PointerEvent.m */; };
+		B016E6DF1A2543DB00C701CE /* RotationEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = B016E6D91A2543DB00C701CE /* RotationEvent.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B016E6BE1A2543B300C701CE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B016E6A21A2543B300C701CE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B016E6A91A2543B300C701CE;
+			remoteInfo = "OSX Example App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B016E6AA1A2543B300C701CE /* OSX Example App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "OSX Example App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B016E6AE1A2543B300C701CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B016E6AF1A2543B300C701CE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B016E6B01A2543B300C701CE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B016E6B21A2543B300C701CE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B016E6B41A2543B300C701CE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		B016E6B71A2543B300C701CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		B016E6BD1A2543B300C701CE /* OSX Example AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "OSX Example AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B016E6C21A2543B300C701CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B016E6C31A2543B300C701CE /* OSX_Example_AppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OSX_Example_AppTests.m; sourceTree = "<group>"; };
+		B016E6CE1A2543DB00C701CE /* ButtonEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ButtonEvent.h; sourceTree = "<group>"; };
+		B016E6CF1A2543DB00C701CE /* ButtonEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ButtonEvent.m; sourceTree = "<group>"; };
+		B016E6D01A2543DB00C701CE /* GestureEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GestureEvent.h; sourceTree = "<group>"; };
+		B016E6D11A2543DB00C701CE /* GestureEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GestureEvent.m; sourceTree = "<group>"; };
+		B016E6D21A2543DB00C701CE /* OpenSpatialBluetooth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenSpatialBluetooth.h; sourceTree = "<group>"; };
+		B016E6D31A2543DB00C701CE /* OpenSpatialBluetooth.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpenSpatialBluetooth.m; sourceTree = "<group>"; };
+		B016E6D41A2543DB00C701CE /* OpenSpatialDecoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenSpatialDecoder.h; sourceTree = "<group>"; };
+		B016E6D51A2543DB00C701CE /* OpenSpatialDecoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpenSpatialDecoder.m; sourceTree = "<group>"; };
+		B016E6D61A2543DB00C701CE /* PointerEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PointerEvent.h; sourceTree = "<group>"; };
+		B016E6D71A2543DB00C701CE /* PointerEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PointerEvent.m; sourceTree = "<group>"; };
+		B016E6D81A2543DB00C701CE /* RotationEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RotationEvent.h; sourceTree = "<group>"; };
+		B016E6D91A2543DB00C701CE /* RotationEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RotationEvent.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B016E6A71A2543B300C701CE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B016E6BA1A2543B300C701CE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B016E6A11A2543B300C701CE = {
+			isa = PBXGroup;
+			children = (
+				B016E6AC1A2543B300C701CE /* OSX Example App */,
+				B016E6C01A2543B300C701CE /* OSX Example AppTests */,
+				B016E6AB1A2543B300C701CE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B016E6AB1A2543B300C701CE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B016E6AA1A2543B300C701CE /* OSX Example App.app */,
+				B016E6BD1A2543B300C701CE /* OSX Example AppTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B016E6AC1A2543B300C701CE /* OSX Example App */ = {
+			isa = PBXGroup;
+			children = (
+				B016E6CD1A2543BC00C701CE /* OpenSpatialSDK */,
+				B016E6AF1A2543B300C701CE /* AppDelegate.h */,
+				B016E6B01A2543B300C701CE /* AppDelegate.m */,
+				B016E6B41A2543B300C701CE /* Images.xcassets */,
+				B016E6B61A2543B300C701CE /* MainMenu.xib */,
+				B016E6AD1A2543B300C701CE /* Supporting Files */,
+			);
+			path = "OSX Example App";
+			sourceTree = "<group>";
+		};
+		B016E6AD1A2543B300C701CE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B016E6AE1A2543B300C701CE /* Info.plist */,
+				B016E6B21A2543B300C701CE /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B016E6C01A2543B300C701CE /* OSX Example AppTests */ = {
+			isa = PBXGroup;
+			children = (
+				B016E6C31A2543B300C701CE /* OSX_Example_AppTests.m */,
+				B016E6C11A2543B300C701CE /* Supporting Files */,
+			);
+			path = "OSX Example AppTests";
+			sourceTree = "<group>";
+		};
+		B016E6C11A2543B300C701CE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B016E6C21A2543B300C701CE /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B016E6CD1A2543BC00C701CE /* OpenSpatialSDK */ = {
+			isa = PBXGroup;
+			children = (
+				B016E6CE1A2543DB00C701CE /* ButtonEvent.h */,
+				B016E6CF1A2543DB00C701CE /* ButtonEvent.m */,
+				B016E6D01A2543DB00C701CE /* GestureEvent.h */,
+				B016E6D11A2543DB00C701CE /* GestureEvent.m */,
+				B016E6D21A2543DB00C701CE /* OpenSpatialBluetooth.h */,
+				B016E6D31A2543DB00C701CE /* OpenSpatialBluetooth.m */,
+				B016E6D41A2543DB00C701CE /* OpenSpatialDecoder.h */,
+				B016E6D51A2543DB00C701CE /* OpenSpatialDecoder.m */,
+				B016E6D61A2543DB00C701CE /* PointerEvent.h */,
+				B016E6D71A2543DB00C701CE /* PointerEvent.m */,
+				B016E6D81A2543DB00C701CE /* RotationEvent.h */,
+				B016E6D91A2543DB00C701CE /* RotationEvent.m */,
+			);
+			name = OpenSpatialSDK;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B016E6A91A2543B300C701CE /* OSX Example App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B016E6C71A2543B300C701CE /* Build configuration list for PBXNativeTarget "OSX Example App" */;
+			buildPhases = (
+				B016E6A61A2543B300C701CE /* Sources */,
+				B016E6A71A2543B300C701CE /* Frameworks */,
+				B016E6A81A2543B300C701CE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "OSX Example App";
+			productName = "OSX Example App";
+			productReference = B016E6AA1A2543B300C701CE /* OSX Example App.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B016E6BC1A2543B300C701CE /* OSX Example AppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B016E6CA1A2543B300C701CE /* Build configuration list for PBXNativeTarget "OSX Example AppTests" */;
+			buildPhases = (
+				B016E6B91A2543B300C701CE /* Sources */,
+				B016E6BA1A2543B300C701CE /* Frameworks */,
+				B016E6BB1A2543B300C701CE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B016E6BF1A2543B300C701CE /* PBXTargetDependency */,
+			);
+			name = "OSX Example AppTests";
+			productName = "OSX Example AppTests";
+			productReference = B016E6BD1A2543B300C701CE /* OSX Example AppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B016E6A21A2543B300C701CE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Nod Inc";
+				TargetAttributes = {
+					B016E6A91A2543B300C701CE = {
+						CreatedOnToolsVersion = 6.1;
+					};
+					B016E6BC1A2543B300C701CE = {
+						CreatedOnToolsVersion = 6.1;
+						TestTargetID = B016E6A91A2543B300C701CE;
+					};
+				};
+			};
+			buildConfigurationList = B016E6A51A2543B300C701CE /* Build configuration list for PBXProject "OSX Example App" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B016E6A11A2543B300C701CE;
+			productRefGroup = B016E6AB1A2543B300C701CE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B016E6A91A2543B300C701CE /* OSX Example App */,
+				B016E6BC1A2543B300C701CE /* OSX Example AppTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B016E6A81A2543B300C701CE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B016E6B51A2543B300C701CE /* Images.xcassets in Resources */,
+				B016E6B81A2543B300C701CE /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B016E6BB1A2543B300C701CE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B016E6A61A2543B300C701CE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B016E6DE1A2543DB00C701CE /* PointerEvent.m in Sources */,
+				B016E6DC1A2543DB00C701CE /* OpenSpatialBluetooth.m in Sources */,
+				B016E6DA1A2543DB00C701CE /* ButtonEvent.m in Sources */,
+				B016E6B31A2543B300C701CE /* main.m in Sources */,
+				B016E6DF1A2543DB00C701CE /* RotationEvent.m in Sources */,
+				B016E6DD1A2543DB00C701CE /* OpenSpatialDecoder.m in Sources */,
+				B016E6DB1A2543DB00C701CE /* GestureEvent.m in Sources */,
+				B016E6B11A2543B300C701CE /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B016E6B91A2543B300C701CE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B016E6C41A2543B300C701CE /* OSX_Example_AppTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B016E6BF1A2543B300C701CE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B016E6A91A2543B300C701CE /* OSX Example App */;
+			targetProxy = B016E6BE1A2543B300C701CE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B016E6B61A2543B300C701CE /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B016E6B71A2543B300C701CE /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B016E6C51A2543B300C701CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		B016E6C61A2543B300C701CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		B016E6C81A2543B300C701CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "OSX Example App/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B016E6C91A2543B300C701CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "OSX Example App/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		B016E6CB1A2543B300C701CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "OSX Example AppTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OSX Example App.app/Contents/MacOS/OSX Example App";
+			};
+			name = Debug;
+		};
+		B016E6CC1A2543B300C701CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "OSX Example AppTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OSX Example App.app/Contents/MacOS/OSX Example App";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B016E6A51A2543B300C701CE /* Build configuration list for PBXProject "OSX Example App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B016E6C51A2543B300C701CE /* Debug */,
+				B016E6C61A2543B300C701CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B016E6C71A2543B300C701CE /* Build configuration list for PBXNativeTarget "OSX Example App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B016E6C81A2543B300C701CE /* Debug */,
+				B016E6C91A2543B300C701CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		B016E6CA1A2543B300C701CE /* Build configuration list for PBXNativeTarget "OSX Example AppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B016E6CB1A2543B300C701CE /* Debug */,
+				B016E6CC1A2543B300C701CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B016E6A21A2543B300C701CE /* Project object */;
+}
