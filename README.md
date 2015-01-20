@@ -1,6 +1,6 @@
-## Open Spatial SDK for iOS
+## Open Spatial SDK for OSX
 
-[Open Spatial](http://openspatial.net) SDK for iOS contains:
+[Open Spatial](http://openspatial.net) SDK for OSX contains:
 
 | Components            | Notes
 | :---------            | :----
@@ -17,7 +17,3 @@ The SDK is distributed under Apache2.0 license (see LICENSE.md).
 2. Open the Example App xcode project. (it should build with no errors if not please visit https://forums.nod.com)
 3. Run the Example App by pressing the play button on xcode.
 4. Click subscribe to events and move your ring to see events logged in the window.
-
-## Open Spatial SDK for Android
-
-For information on Open Spatial SDK for Android see (https://github.com/openspatial/android-sdk)
