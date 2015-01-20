@@ -1,5 +1,7 @@
 ## Open Spatial SDK for OSX
 
+Note This SDK is built for OSX 10.10 Yosemite
+
 [Open Spatial](http://openspatial.net) SDK for OSX contains:
 
 | Components            | Notes
