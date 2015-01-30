@@ -5,7 +5,6 @@
 //  Created by Khwaab Dave on 11/25/14.
 //  Copyright (c) 2014 Nod Inc. All rights reserved.
 //
-
 #import "AppDelegate.h"
 
 @interface AppDelegate ()
@@ -16,9 +15,16 @@
 @implementation AppDelegate
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
+    //MISC UI SETUP
+    [self.tableView setDelegate: self];
+    [self.tableView setDataSource:self];
+    [self.pairedTableView setDelegate:self];
+    [self.pairedTableView setDataSource:self];
+    [self.textView setEditable:false];
+    
+    //OpenSpatial Setup amd scan
     self.opSpcBt = [OpenSpatialBluetooth sharedBluetoothServ];
     [self.opSpcBt setDelegate:self];
-    [self.textView setEditable:false];
     [self.opSpcBt scanForPeripherals];
 }
 
@@ -26,33 +32,64 @@
     // Insert code here to tear down your application
 }
 
+//subscribe to appropriate events (in this case all) called after a
+//connection is made
 - (IBAction)subscribe:(id)sender
 {
-    for(CBPeripheral* per in [self.opSpcBt.connectedPeripherals allKeys])
-    {
-        [self.opSpcBt subscribeToGestureEvents:per.name];
-        [self.opSpcBt subscribeToButtonEvents:per.name];
-        [self.opSpcBt subscribeToRotationEvents:per.name];
-        [self.opSpcBt subscribeToPointerEvents:per.name];
-    }
+        [self.opSpcBt subscribeToGestureEvents:self.connectedDevice.name];
+        [self.opSpcBt subscribeToButtonEvents:self.connectedDevice.name];
+        [self.opSpcBt subscribeToRotationEvents:self.connectedDevice.name];
+        [self.opSpcBt subscribeToPointerEvents:self.connectedDevice.name];
 }
-
-- (void) didFindNewDevice:(NSArray *)peripherals
+- (IBAction)unsubscribe:(id)sender
 {
-    for(CBPeripheral* per in peripherals)
+    [self.opSpcBt unsubscribeFromRotationEvents:self.connectedDevice.name];
+    [self.opSpcBt unsubscribeFromPointerEvents:self.connectedDevice.name];
+    [self.opSpcBt unsubscribeFromGestureEvents:self.connectedDevice.name];
+    [self.opSpcBt unsubscribeFromButtonEvents:self.connectedDevice.name];
+}
+
+//Connect to a device
+- (IBAction)connect:(id)sender
+{
+    if(self.tableView.selectedRow >= 0)
     {
-        [self.opSpcBt connectToPeripheral:per];
+        CBPeripheral* perph = [self.opSpcBt.foundPeripherals objectAtIndex:self.tableView.selectedRow];
+        self.connectedDevice = perph;
+        [self.opSpcBt connectToPeripheral:self.connectedDevice];
+    }
+    else if(self.pairedTableView.selectedRow >= 0)
+    {
+        CBPeripheral* perph = [self.opSpcBt.pairedPeripherals objectAtIndex:self.pairedTableView.selectedRow];
+        self.connectedDevice = perph;
+        [self.opSpcBt connectToPeripheral:self.connectedDevice];
     }
 }
 
+//Callback when SDK finda a unpaired device
+- (void) didFindNewScannedDevice:(NSArray *)peripherals
+{
+    [self.tableView reloadData];
+}
+
+//Callback when SDK finds a paired device
+- (void) didFindNewPairedDevice: (NSArray*) peripherals
+{
+    [self.pairedTableView reloadData];
+}
+
+//Callback when SDK successfully connects to a Nod
 -(void) didConnectToNod:(CBPeripheral *)peripheral
 {
     [self.numRingsLab setStringValue:peripheral.name];
 }
 
+/*
+ *                      EVENT CALLBACKS
+ */
 - (ButtonEvent*) buttonEventFired:(ButtonEvent *)buttonEvent
 {
-    NSString* string = [NSString stringWithFormat:@"\nButton Event: %d",buttonEvent.myButtonEventNum];
+    NSString* string = [NSString stringWithFormat:@"\nButton Event: %d",buttonEvent.eventNum];
     [self appendToMyTextView:string];
     return buttonEvent;
 }
@@ -76,12 +113,12 @@
 - (GestureEvent*) gestureEventFired:(GestureEvent *)gestureEvent
 {
     NSString* string = [NSString stringWithFormat:@"\nGesture Event: %d",
-                        gestureEvent.myGestureEventNum];
+                        gestureEvent.eventNum];
     [self appendToMyTextView:string];
     return gestureEvent;
 }
 
-
+//MISC TABLE VIEW FCNs
 - (void)appendToMyTextView:(NSString*)text
 {
     dispatch_async(dispatch_get_main_queue(), ^{
@@ -91,4 +128,37 @@
         [self.textView scrollRangeToVisible:NSMakeRange([[self.textView string] length], 0)];
     });
 }
+
+- (NSInteger)numberOfRowsInTableView:(NSTableView *)aTableView
+{
+    if(aTableView == self.pairedTableView)
+    {
+        return self.opSpcBt.pairedPeripherals.count;
+    }
+    if(aTableView == self.tableView)
+    {
+        return self.opSpcBt.foundPeripherals.count;
+    }
+    return 0;
+}
+
+- (id)tableView:(NSTableView *)aTableView
+objectValueForTableColumn:(NSTableColumn *)aTableColumn
+            row:(NSInteger)rowIndex
+{
+    NSString* str;
+    if(aTableView == self.pairedTableView)
+    {
+        CBPeripheral* perph = [self.opSpcBt.pairedPeripherals objectAtIndex:rowIndex];
+        str = perph.name;
+    }
+    if(aTableView == self.tableView)
+    {
+        CBPeripheral* perph = [self.opSpcBt.foundPeripherals objectAtIndex:rowIndex];
+        str = perph.name;
+    }
+    return str;
+}
+
+
 @end

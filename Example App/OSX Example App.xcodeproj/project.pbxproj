@@ -12,12 +12,13 @@
 		B016E6B51A2543B300C701CE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B016E6B41A2543B300C701CE /* Images.xcassets */; };
 		B016E6B81A2543B300C701CE /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = B016E6B61A2543B300C701CE /* MainMenu.xib */; };
 		B016E6C41A2543B300C701CE /* OSX_Example_AppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B016E6C31A2543B300C701CE /* OSX_Example_AppTests.m */; };
-		B016E6DA1A2543DB00C701CE /* ButtonEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = B016E6CF1A2543DB00C701CE /* ButtonEvent.m */; };
-		B016E6DB1A2543DB00C701CE /* GestureEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = B016E6D11A2543DB00C701CE /* GestureEvent.m */; };
-		B016E6DC1A2543DB00C701CE /* OpenSpatialBluetooth.m in Sources */ = {isa = PBXBuildFile; fileRef = B016E6D31A2543DB00C701CE /* OpenSpatialBluetooth.m */; };
-		B016E6DD1A2543DB00C701CE /* OpenSpatialDecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = B016E6D51A2543DB00C701CE /* OpenSpatialDecoder.m */; };
-		B016E6DE1A2543DB00C701CE /* PointerEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = B016E6D71A2543DB00C701CE /* PointerEvent.m */; };
-		B016E6DF1A2543DB00C701CE /* RotationEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = B016E6D91A2543DB00C701CE /* RotationEvent.m */; };
+		B0EC135A1A7C13F2008F2700 /* ButtonEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = B0EC134F1A7C13F2008F2700 /* ButtonEvent.m */; };
+		B0EC135B1A7C13F2008F2700 /* GestureEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = B0EC13511A7C13F2008F2700 /* GestureEvent.m */; };
+		B0EC135C1A7C13F2008F2700 /* OpenSpatialBluetooth.m in Sources */ = {isa = PBXBuildFile; fileRef = B0EC13531A7C13F2008F2700 /* OpenSpatialBluetooth.m */; };
+		B0EC135D1A7C13F2008F2700 /* OpenSpatialDecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = B0EC13551A7C13F2008F2700 /* OpenSpatialDecoder.m */; };
+		B0EC135E1A7C13F2008F2700 /* PointerEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = B0EC13571A7C13F2008F2700 /* PointerEvent.m */; };
+		B0EC135F1A7C13F2008F2700 /* RotationEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = B0EC13591A7C13F2008F2700 /* RotationEvent.m */; };
+		B0F06CD51A72D06600626892 /* RingScanTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F06CD41A72D06600626892 /* RingScanTableView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,18 +42,20 @@
 		B016E6BD1A2543B300C701CE /* OSX Example AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "OSX Example AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B016E6C21A2543B300C701CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B016E6C31A2543B300C701CE /* OSX_Example_AppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OSX_Example_AppTests.m; sourceTree = "<group>"; };
-		B016E6CE1A2543DB00C701CE /* ButtonEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ButtonEvent.h; sourceTree = "<group>"; };
-		B016E6CF1A2543DB00C701CE /* ButtonEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ButtonEvent.m; sourceTree = "<group>"; };
-		B016E6D01A2543DB00C701CE /* GestureEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GestureEvent.h; sourceTree = "<group>"; };
-		B016E6D11A2543DB00C701CE /* GestureEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GestureEvent.m; sourceTree = "<group>"; };
-		B016E6D21A2543DB00C701CE /* OpenSpatialBluetooth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenSpatialBluetooth.h; sourceTree = "<group>"; };
-		B016E6D31A2543DB00C701CE /* OpenSpatialBluetooth.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpenSpatialBluetooth.m; sourceTree = "<group>"; };
-		B016E6D41A2543DB00C701CE /* OpenSpatialDecoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenSpatialDecoder.h; sourceTree = "<group>"; };
-		B016E6D51A2543DB00C701CE /* OpenSpatialDecoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpenSpatialDecoder.m; sourceTree = "<group>"; };
-		B016E6D61A2543DB00C701CE /* PointerEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PointerEvent.h; sourceTree = "<group>"; };
-		B016E6D71A2543DB00C701CE /* PointerEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PointerEvent.m; sourceTree = "<group>"; };
-		B016E6D81A2543DB00C701CE /* RotationEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RotationEvent.h; sourceTree = "<group>"; };
-		B016E6D91A2543DB00C701CE /* RotationEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RotationEvent.m; sourceTree = "<group>"; };
+		B0EC134E1A7C13F2008F2700 /* ButtonEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ButtonEvent.h; path = "../../Open Spatial OSX SDK/ButtonEvent.h"; sourceTree = "<group>"; };
+		B0EC134F1A7C13F2008F2700 /* ButtonEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ButtonEvent.m; path = "../../Open Spatial OSX SDK/ButtonEvent.m"; sourceTree = "<group>"; };
+		B0EC13501A7C13F2008F2700 /* GestureEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GestureEvent.h; path = "../../Open Spatial OSX SDK/GestureEvent.h"; sourceTree = "<group>"; };
+		B0EC13511A7C13F2008F2700 /* GestureEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GestureEvent.m; path = "../../Open Spatial OSX SDK/GestureEvent.m"; sourceTree = "<group>"; };
+		B0EC13521A7C13F2008F2700 /* OpenSpatialBluetooth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OpenSpatialBluetooth.h; path = "../../Open Spatial OSX SDK/OpenSpatialBluetooth.h"; sourceTree = "<group>"; };
+		B0EC13531A7C13F2008F2700 /* OpenSpatialBluetooth.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OpenSpatialBluetooth.m; path = "../../Open Spatial OSX SDK/OpenSpatialBluetooth.m"; sourceTree = "<group>"; };
+		B0EC13541A7C13F2008F2700 /* OpenSpatialDecoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OpenSpatialDecoder.h; path = "../../Open Spatial OSX SDK/OpenSpatialDecoder.h"; sourceTree = "<group>"; };
+		B0EC13551A7C13F2008F2700 /* OpenSpatialDecoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OpenSpatialDecoder.m; path = "../../Open Spatial OSX SDK/OpenSpatialDecoder.m"; sourceTree = "<group>"; };
+		B0EC13561A7C13F2008F2700 /* PointerEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PointerEvent.h; path = "../../Open Spatial OSX SDK/PointerEvent.h"; sourceTree = "<group>"; };
+		B0EC13571A7C13F2008F2700 /* PointerEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PointerEvent.m; path = "../../Open Spatial OSX SDK/PointerEvent.m"; sourceTree = "<group>"; };
+		B0EC13581A7C13F2008F2700 /* RotationEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RotationEvent.h; path = "../../Open Spatial OSX SDK/RotationEvent.h"; sourceTree = "<group>"; };
+		B0EC13591A7C13F2008F2700 /* RotationEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RotationEvent.m; path = "../../Open Spatial OSX SDK/RotationEvent.m"; sourceTree = "<group>"; };
+		B0F06CD31A72D06600626892 /* RingScanTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RingScanTableView.h; sourceTree = "<group>"; };
+		B0F06CD41A72D06600626892 /* RingScanTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RingScanTableView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +102,8 @@
 				B016E6B01A2543B300C701CE /* AppDelegate.m */,
 				B016E6B41A2543B300C701CE /* Images.xcassets */,
 				B016E6B61A2543B300C701CE /* MainMenu.xib */,
+				B0F06CD31A72D06600626892 /* RingScanTableView.h */,
+				B0F06CD41A72D06600626892 /* RingScanTableView.m */,
 				B016E6AD1A2543B300C701CE /* Supporting Files */,
 			);
 			path = "OSX Example App";
@@ -133,18 +138,18 @@
 		B016E6CD1A2543BC00C701CE /* OpenSpatialSDK */ = {
 			isa = PBXGroup;
 			children = (
-				B016E6CE1A2543DB00C701CE /* ButtonEvent.h */,
-				B016E6CF1A2543DB00C701CE /* ButtonEvent.m */,
-				B016E6D01A2543DB00C701CE /* GestureEvent.h */,
-				B016E6D11A2543DB00C701CE /* GestureEvent.m */,
-				B016E6D21A2543DB00C701CE /* OpenSpatialBluetooth.h */,
-				B016E6D31A2543DB00C701CE /* OpenSpatialBluetooth.m */,
-				B016E6D41A2543DB00C701CE /* OpenSpatialDecoder.h */,
-				B016E6D51A2543DB00C701CE /* OpenSpatialDecoder.m */,
-				B016E6D61A2543DB00C701CE /* PointerEvent.h */,
-				B016E6D71A2543DB00C701CE /* PointerEvent.m */,
-				B016E6D81A2543DB00C701CE /* RotationEvent.h */,
-				B016E6D91A2543DB00C701CE /* RotationEvent.m */,
+				B0EC134E1A7C13F2008F2700 /* ButtonEvent.h */,
+				B0EC134F1A7C13F2008F2700 /* ButtonEvent.m */,
+				B0EC13501A7C13F2008F2700 /* GestureEvent.h */,
+				B0EC13511A7C13F2008F2700 /* GestureEvent.m */,
+				B0EC13521A7C13F2008F2700 /* OpenSpatialBluetooth.h */,
+				B0EC13531A7C13F2008F2700 /* OpenSpatialBluetooth.m */,
+				B0EC13541A7C13F2008F2700 /* OpenSpatialDecoder.h */,
+				B0EC13551A7C13F2008F2700 /* OpenSpatialDecoder.m */,
+				B0EC13561A7C13F2008F2700 /* PointerEvent.h */,
+				B0EC13571A7C13F2008F2700 /* PointerEvent.m */,
+				B0EC13581A7C13F2008F2700 /* RotationEvent.h */,
+				B0EC13591A7C13F2008F2700 /* RotationEvent.m */,
 			);
 			name = OpenSpatialSDK;
 			sourceTree = "<group>";
@@ -248,14 +253,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B016E6DE1A2543DB00C701CE /* PointerEvent.m in Sources */,
-				B016E6DC1A2543DB00C701CE /* OpenSpatialBluetooth.m in Sources */,
-				B016E6DA1A2543DB00C701CE /* ButtonEvent.m in Sources */,
 				B016E6B31A2543B300C701CE /* main.m in Sources */,
-				B016E6DF1A2543DB00C701CE /* RotationEvent.m in Sources */,
-				B016E6DD1A2543DB00C701CE /* OpenSpatialDecoder.m in Sources */,
-				B016E6DB1A2543DB00C701CE /* GestureEvent.m in Sources */,
+				B0EC135C1A7C13F2008F2700 /* OpenSpatialBluetooth.m in Sources */,
 				B016E6B11A2543B300C701CE /* AppDelegate.m in Sources */,
+				B0EC135B1A7C13F2008F2700 /* GestureEvent.m in Sources */,
+				B0EC135E1A7C13F2008F2700 /* PointerEvent.m in Sources */,
+				B0EC135A1A7C13F2008F2700 /* ButtonEvent.m in Sources */,
+				B0EC135D1A7C13F2008F2700 /* OpenSpatialDecoder.m in Sources */,
+				B0EC135F1A7C13F2008F2700 /* RotationEvent.m in Sources */,
+				B0F06CD51A72D06600626892 /* RingScanTableView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -444,6 +450,7 @@
 				B016E6C91A2543B300C701CE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B016E6CA1A2543B300C701CE /* Build configuration list for PBXNativeTarget "OSX Example AppTests" */ = {
 			isa = XCConfigurationList;
@@ -452,6 +459,7 @@
 				B016E6CC1A2543B300C701CE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
