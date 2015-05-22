@@ -18,7 +18,6 @@
 		B0EC135D1A7C13F2008F2700 /* OpenSpatialDecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = B0EC13551A7C13F2008F2700 /* OpenSpatialDecoder.m */; };
 		B0EC135E1A7C13F2008F2700 /* PointerEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = B0EC13571A7C13F2008F2700 /* PointerEvent.m */; };
 		B0EC135F1A7C13F2008F2700 /* RotationEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = B0EC13591A7C13F2008F2700 /* RotationEvent.m */; };
-		B0F06CD51A72D06600626892 /* RingScanTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F06CD41A72D06600626892 /* RingScanTableView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,8 +53,6 @@
 		B0EC13571A7C13F2008F2700 /* PointerEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PointerEvent.m; path = "../../Open Spatial OSX SDK/PointerEvent.m"; sourceTree = "<group>"; };
 		B0EC13581A7C13F2008F2700 /* RotationEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RotationEvent.h; path = "../../Open Spatial OSX SDK/RotationEvent.h"; sourceTree = "<group>"; };
 		B0EC13591A7C13F2008F2700 /* RotationEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RotationEvent.m; path = "../../Open Spatial OSX SDK/RotationEvent.m"; sourceTree = "<group>"; };
-		B0F06CD31A72D06600626892 /* RingScanTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RingScanTableView.h; sourceTree = "<group>"; };
-		B0F06CD41A72D06600626892 /* RingScanTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RingScanTableView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,8 +99,6 @@
 				B016E6B01A2543B300C701CE /* AppDelegate.m */,
 				B016E6B41A2543B300C701CE /* Images.xcassets */,
 				B016E6B61A2543B300C701CE /* MainMenu.xib */,
-				B0F06CD31A72D06600626892 /* RingScanTableView.h */,
-				B0F06CD41A72D06600626892 /* RingScanTableView.m */,
 				B016E6AD1A2543B300C701CE /* Supporting Files */,
 			);
 			path = "OSX Example App";
@@ -261,7 +256,6 @@
 				B0EC135A1A7C13F2008F2700 /* ButtonEvent.m in Sources */,
 				B0EC135D1A7C13F2008F2700 /* OpenSpatialDecoder.m in Sources */,
 				B0EC135F1A7C13F2008F2700 /* RotationEvent.m in Sources */,
-				B0F06CD51A72D06600626892 /* RingScanTableView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
